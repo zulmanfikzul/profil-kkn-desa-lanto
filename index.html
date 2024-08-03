@@ -4,37 +4,105 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profil Kelompok KKN Desa Lanto</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+      header img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+      .header-content {
+        text-align: center;
+        flex-grow: 1;
+      }
+      .header-content h1 {
+        margin: 0;
+        font-size: 1em;
+      }
+      .header-content p {
+        margin: 5px 0 0;
+        font-size: 0.8em;
+      }
+      nav {
+        margin-top: 60px;
+        background-color: #333;
+      }
+      nav ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+      }
+      nav ul li {
+        display: inline;
+        margin: 0 10px;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        display: inline-block;
+      }
+      main {
+        margin-top: 100px;
+        padding: 20px;
+      }
+      section {
+        background-color: white;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #333;
+        color: white;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <div style="display: flex; justify-content: center; align-items: center; background-color: #333; color: #fff; padding: 10px 0; position: fixed; width: 100%; top: 0; left: 0; z-index: 1000">
-        <div style="position: absolute; left: 10px">
-          <img src="image/usn.png" alt="Logo Left" style="width: 80px; height: 80px; border-radius: 50%; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)" />
-        </div>
-        <div style="text-align: center; margin: 0 20px">
-          <h1 style="margin: 0; font-size: 1.5em">KELOMPOK KKN DESA LANTO</h1>
-          <p style="margin: 5px 0 0">KAC.MAWASANGKA TENGAH, KAB.BUTON TENGAH</p>
-        </div>
-        <div style="position: absolute; right: 10px">
-          <img src="image/lanto.png" alt="Logo Right" style="width: 80px; height: 80px; border-radius: 50%; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)" />
-        </div>
+      <img src="images/usn.png" alt="Logo Left" />
+      <div class="header-content">
+        <h1>KELOMPOK KKN DESA LANTO</h1>
+        <p>KAC. MAWASANGKA TENGAH, KAB. BUTON TENGAH</p>
       </div>
-      <nav style="margin-top: 80px">
-        <ul style="list-style: none; padding: 0; text-align: center; background-color: #030303; color: #fff">
-          <li style="display: inline; margin: 0 10px"><a href="index.html" style="color: #fff; text-decoration: none">Home</a></li>
-          <li style="display: inline; margin: 0 10px"><a href="anggota.html" style="color: #fff; text-decoration: none">Anggota</a></li>
-          <li style="display: inline; margin: 0 10px"><a href="about.html" style="color: #fff; text-decoration: none">Tentang Kami</a></li>
-          <li style="display: inline; margin: 0 10px"><a href="contact.html" style="color: #fff; text-decoration: none">Kontak</a></li>
-        </ul>
-      </nav>
+      <img src="images/lanto.png" alt="Logo Right" />
     </header>
-    <main style="margin-top: 120px">
-      <section id="home" style="padding: 20px; background-color: #fff; border-radius: 8px; margin: 20px">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="anggota.html">Anggota</a></li>
+        <li><a href="about.html">Tentang Kami</a></li>
+        <li><a href="contact.html">Kontak</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="home">
         <h2>Selamat Datang di Profil Kelompok KKN</h2>
         <p>Ini adalah halaman profil kelompok yang menarik.</p>
       </section>
     </main>
-    <footer style="text-align: center; padding: 10px; background-color: #333; color: #fff; position: fixed; bottom: 0; width: 100%">
+    <footer>
       <p>&copy; 2024 Profil Kelompok Desa Lanto. All rights reserved.</p>
     </footer>
   </body>
